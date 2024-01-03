@@ -111,4 +111,13 @@ console.log(Object.keys(employee)); // return array of keys of the obkect
 console.log(Object.values(employee)); //return array valuse of the object
 console.log(Object.entries(employee));// return array inside that array we have arrays of keys and values [ [ 'age', 26 ], [ 'Name', 'xyz' ], [ 'exp', '2 Years' ] ]
 
+// new way to access the property inside the obect
+//syntax VariableType {obejtKeyName} = ObjectName
+const {exp} = employee    //we can access the obejt property using {} 
+console.log(exp);
 
+//you can assign the value of object key see syntax below
+//VariableType {obejtKeyName: assignVariableName} = ObjectName
+
+const {Name: empName} = employee
+console.log(empName);
